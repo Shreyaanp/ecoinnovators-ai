@@ -1,0 +1,85 @@
+2023-12-19 14:21:56,222 - API call failed with status code 401 and message: {
+    "error": {
+        "message": "Incorrect API key provided: None. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2023-12-19 14:21:56,224 - User: Hello, how are you?
+2023-12-19 14:21:56,224 - Bot: Sorry, I encountered an error with the API call.
+2023-12-19 14:23:53,076 - User: Hello, how are you?
+2023-12-19 14:23:53,076 - Bot: Hello! I'm an AI assistant, so I don't have feelings, but I'm here to help. How can I assist you today?
+2023-12-19 14:29:49,351 - User: Hello, how are you?
+2023-12-19 14:29:49,351 - Bot: Hello! I'm just a digital assistant, so I don't have feelings, but I'm here and ready to help you. How can I assist you today?
+2023-12-19 14:31:53,895 - User: hi how are you ?
+2023-12-19 14:31:53,895 - Bot: Hello! I don't have feelings, but I'm ready and available to help you with any problem or question you might have. How can I assist you today?
+2023-12-19 14:32:02,229 - User: hi how are you  ?
+2023-12-19 14:32:02,229 - Bot: Hello! I don't have feelings, but I'm ready and equipped to assist you with any questions or problems you might have. How can I help you today?
+2023-12-19 16:06:46,629 - Error in talking to data: Expected str, list, or file-like object, got <class 'pandas.core.frame.DataFrame'>
+2023-12-19 16:13:14,280 - Error in talking to data: Missing optional dependency 'tabulate'.  Use pip or conda to install tabulate.
+2023-12-19 16:13:54,337 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:13:55,250 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:15:20,728 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:15:22,828 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:15:45,462 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:15:47,287 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:16:59,429 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:17:00,888 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:17:02,176 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:22:00,235 - Error in talking to data: Expected str, list, or file-like object, got <class 'pandas.core.frame.DataFrame'>
+2023-12-19 16:22:17,702 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:22:19,108 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:24:28,651 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:24:30,424 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:25:02,707 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:25:04,471 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:57:17,016 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:57:19,251 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:17,760 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:18,663 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:23,952 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:24,889 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:38,226 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 16:59:39,516 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:02:43,599 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:02:44,711 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:02:59,449 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:03:00,401 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:05:02,650 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:05:03,934 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:05:52,591 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:05:55,428 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:06:13,132 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:06:14,553 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:06:47,243 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:06:49,935 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:10:27,950 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:10:29,375 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:11:14,265 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:11:15,739 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:11:32,516 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:11:33,573 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:12:20,927 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:12:22,239 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:12:23,559 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:14:32,223 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:14:33,425 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:14:34,369 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:14:35,670 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:14:36,871 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:16:47,649 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:16:50,719 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:16:53,086 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:11,055 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:12,330 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:20,426 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:21,640 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:22,695 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:24,380 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:17:25,415 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:27:00,110 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:27:05,850 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:27:08,332 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 17:27:09,624 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
