@@ -83,3 +83,48 @@
 2023-12-19 17:27:05,850 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
 2023-12-19 17:27:08,332 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
 2023-12-19 17:27:09,624 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:56:25,603 - Error in talking to data: Missing optional dependency 'tabulate'.  Use pip or conda to install tabulate.
+2023-12-19 18:57:21,086 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:57:22,237 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:57:43,093 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:57:45,724 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:06,216 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:07,556 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:17,273 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:18,961 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:20,758 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:34,561 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:35,956 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:47,824 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 18:58:49,227 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:08:46,715 - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2023-12-19 19:12:50,157 - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2023-12-19 19:13:39,036 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:13:40,236 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:30:21,727 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:30:23,306 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:30:41,976 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:30:43,760 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:31:17,231 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:31:18,181 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:31:35,139 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:31:36,727 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:31:37,720 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:32:12,573 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:32:13,620 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:32:35,939 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:32:37,052 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:32:59,583 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:33:01,011 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:34:35,749 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:34:37,386 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:44:03,751 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2023-12-19 19:44:05,256 - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"

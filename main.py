@@ -48,8 +48,11 @@ def load_all_csv_files(directory):
         df_name = os.path.basename(file).split('.')[0]
         file_paths[df_name] = file  # Store the file path
     return file_paths
-
 all_csv_file_paths = load_all_csv_files('./data')
+
+@app.post("/")
+async def root():
+    return {"message": "The ai engine is running"}
 
 @app.post("/generate-response/")
 async def generate_response(prompt: Prompt):
@@ -76,6 +79,7 @@ async def talk_to_data(prompt: DataPrompt):
                                  verbose=True)
 
         agent_response = agent.run(prompt.question)
+        final_response = agent_response
         return {"response": agent_response}
     except Exception as e:
         logging.error(f"Error in talking to data: {e}")
