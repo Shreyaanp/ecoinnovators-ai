@@ -1,4 +1,4 @@
-                                                                                  ChemD
+ChemD
 Overview
 Welcome to ChemD! This project is a powerful tool that combines the capabilities of the pandasai library and power of large language model to enhance data analysis and exploration. Whether you're a data scientist, analyst, or enthusiast, this tool aims to make your data-driven tasks more intuitive and efficient.
 
