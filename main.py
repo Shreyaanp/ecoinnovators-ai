@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import openai
@@ -11,6 +11,8 @@ import pandas as pd
 import glob
 from langchain_experimental.agents import create_csv_agent
 from langchain.llms import OpenAI
+import matplotlib.pyplot as plt
+
 
 # Load environment variables
 load_dotenv()
@@ -53,7 +55,34 @@ all_csv_file_paths = load_all_csv_files('./data')
 @app.post("/")
 async def root():
     return {"message": "The ai engine is running"}
+UPLOAD_DIRECTORY = "./Dataa"
 
+@app.post("/uploadfile/")
+async def upload_file(file: UploadFile = File(...)):
+    try:
+        file_location = os.path.join(UPLOAD_DIRECTORY, file.filename)
+        with open(file_location, "wb") as file_object:
+            file_object.write(file.file.read())
+
+        # Optionally, update the list of CSV files
+        global all_csv_file_paths
+        all_csv_file_paths = load_all_csv_files(UPLOAD_DIRECTORY)
+
+        return {"info": f"file '{file.filename}' saved at '{file_location}'"}
+    except Exception as e:
+        logging.error(f"Error in file upload: {e}")
+        return {"error": "An error occurred while uploading the file"}
+@app.get("/files/")
+async def list_files():
+    try:
+        # List all files in the directory
+        files = os.listdir(UPLOAD_DIRECTORY)
+        # Filter out any non-file entities (like subdirectories)
+        files = [f for f in files if os.path.isfile(os.path.join(UPLOAD_DIRECTORY, f))]
+        return {"files": files}
+    except Exception as e:
+        logging.error(f"Error in listing files: {e}")
+        return {"error": "An error occurred while listing the files"}
 @app.post("/generate-response/")
 async def generate_response(prompt: Prompt):
     try:
@@ -66,6 +95,7 @@ async def generate_response(prompt: Prompt):
         logging.error(f"Error in generating response: {e}")
         return {"error": "An error occurred while processing your request"}
 
+
 @app.post("/talkdata/")
 async def talk_to_data(prompt: DataPrompt):
     try:
@@ -74,16 +104,28 @@ async def talk_to_data(prompt: DataPrompt):
 
         # Use the file path of the specified CSV file for the agent
         csv_file_path = all_csv_file_paths[prompt.dataframe_name]
+
         agent = create_csv_agent(OpenAI(temperature=0),
                                  csv_file_path,  # Pass the file path
                                  verbose=True)
-
+        agent.agent.llm_chain.prompt.template
         agent_response = agent.run(prompt.question)
-        final_response = agent_response
         return {"response": agent_response}
     except Exception as e:
         logging.error(f"Error in talking to data: {e}")
         return {"error": "An error occurred while processing your request"}
+@app.delete("/delete-file/{file_name}")
+async def delete_file(file_name: str):
+    try:
+        file_path = os.path.join(UPLOAD_DIRECTORY, file_name)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            return {"info": f"File '{file_name}' has been deleted"}
+        else:
+            raise HTTPException(status_code=404, detail="File not found")
+    except Exception as e:
+        logging.error(f"Error in deleting file: {e}")
+        return {"error": "An error occurred while deleting the file"}
 
 class ConversationBot:
     def __init__(self):
@@ -102,8 +144,9 @@ class ConversationBot:
                     "role": "system",
                     "content": (
                         "You are an helpful data scientist who is trying to help a user with a problem."
-                        "you can reply to user for thank you, sure and no problem.e "
+                        "you can reply to user for thank you, sure and no probleme "
                         "you dont have to reply the user with code, rather if possible execute it and then show the data. If not then just reply with suggestions on doing the task"
+                        "You also have to write the code for the user if he/she asks for it."
 
                     ),
                 },
